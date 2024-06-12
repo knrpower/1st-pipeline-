@@ -37,11 +37,11 @@ node {
                         nexusArtifactUploader(
                             nexusVersion: "nexus3",
                             protocol: "http",
-                            nexusUrl: "13.233.104.193:8081/",
+                            nexusUrl: "3.140.254.7:8081//",
                             groupId: pom.groupId,
                             version: '${BUILD_NUMBER}',
-                            repository: "ncodeit-scripted",
-                            credentialsId: "nexus_credentials",
+                            repository: "scripted",
+                            credentialsId: "Nexus_server",
                             artifacts: [
                                 // Artifact generated such as .jar, .ear and .war files.
                                 [artifactId: pom.artifactId,
